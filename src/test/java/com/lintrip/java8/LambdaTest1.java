@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class LambdaTest {
+public class LambdaTest1 {
     List<Employee> employees = Arrays.asList(new Employee("张三", 58, 3333.33),
             new Employee("李四", 38, 4444.44),
             new Employee("王五", 28, 5555.55),
