@@ -24,3 +24,4 @@ gen
 *.tar.gz
 *.rar
 /target/
+*/target
