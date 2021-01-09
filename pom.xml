@@ -10,6 +10,8 @@
         <module>jackson-demo</module>
         <module>guava-demo</module>
         <module>rest-template-demo</module>
+        <module>concurrent-demo</module>
+        <module>collection-demo</module>
     </modules>
     <packaging>pom</packaging>
 
