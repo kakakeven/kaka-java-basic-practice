@@ -1,7 +1,5 @@
 package com.lintrip.java8;
 
-import java.util.ArrayList;
-
 /**
  * Hello world!
  *

@@ -2,7 +2,6 @@ package com.lintrip.java8;
 
 import org.apache.http.client.config.RequestConfig;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
