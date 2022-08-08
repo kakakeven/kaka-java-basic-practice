@@ -20,8 +20,14 @@ public class SortTest {
     public void setUp() {
         studentList = new ArrayList<>();
         studentList.add(new Student("zhangsan", 80));
-        studentList.add(new Student("lisi", 65));
         studentList.add(new Student("wangwu", 55));
+        studentList.add(new Student("lisi", 65));
+    }
+
+    @Test
+    public void test(){
+        Collections.sort(studentList, (o1, o2) -> (o1.getAge() > o2.getAge()) ? -1 : 1);
+        System.out.println(studentList.get(1));
     }
 
     /**
@@ -53,9 +59,35 @@ public class SortTest {
 
     @Test
     public void sortByCompare() {
-        Collections.sort(studentList,Comparator.comparing(Student::getAge));
+        Collections.sort(studentList, Comparator.comparing(Student::getAge));
         studentList.stream().forEach(student -> {
             System.out.println(student);
         });
+    }
+
+    @Test
+    public void compute() {
+        double a = 9.345;
+        double b = a % 3;
+
+        double d = 10 / 3;
+        System.out.println(b);
+        System.out.println(d);
+    }
+
+    @Test
+    public void test1() {
+        int a = 1;
+        int b = 2;
+        System.out.println(++a);
+//        System.out.println(b++);
+        int c = b + 2;
+        System.out.println(c);
+
+        boolean isA = true;
+        boolean isB = false;
+        boolean isC = true;
+        System.out.println(isA ^ isB);
+        System.out.println(isA ^ isC);
     }
 }

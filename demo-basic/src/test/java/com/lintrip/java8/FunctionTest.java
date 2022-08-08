@@ -5,7 +5,9 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * Function 函数测试用例
@@ -29,7 +31,7 @@ public class FunctionTest {
         });
         List<String> nameList3 = map(students, s -> s.getName());
         // 方法引用的写法
-        List<String> nameList4 = map(students,Student::getName);
+        List<String> nameList4 = map(students, Student::getName);
         System.out.println(nameList1);
         System.out.println(nameList2);
         System.out.println(nameList3);
@@ -43,4 +45,5 @@ public class FunctionTest {
         }
         return dataList;
     }
+
 }
