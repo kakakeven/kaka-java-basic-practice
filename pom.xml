@@ -12,6 +12,7 @@
         <module>rest-template-demo</module>
         <module>concurrent-demo</module>
         <module>collection-demo</module>
+        <module>netty-demo</module>
     </modules>
     <packaging>pom</packaging>
 
