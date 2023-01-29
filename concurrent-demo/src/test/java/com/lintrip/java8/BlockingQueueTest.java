@@ -74,4 +74,27 @@ public class BlockingQueueTest {
         blockingQueue.peek();
         Assert.assertNull(blockingQueue.peek());
     }
+
+    @Test
+    public void testPut() throws InterruptedException {
+        BlockingQueue<String> blockingQueue =
+            new ArrayBlockingQueue<>(2);
+
+        blockingQueue.put("1");
+        blockingQueue.put("2");
+        System.out.println("[0]blockingQueue  size:" + blockingQueue.size());
+        blockingQueue.put("3");
+        System.out.println("[1]blockingQueue  size:" + blockingQueue.size());
+    }
+
+    @Test
+    public void testTake() throws InterruptedException {
+        BlockingQueue<String> blockingQueue =
+            new ArrayBlockingQueue<>(2);
+
+        blockingQueue.put("1");
+        System.out.println("element is:" + blockingQueue.take());
+        blockingQueue.take();
+        System.out.println("[0]blockingQueue  size:" + blockingQueue.size());
+    }
 }

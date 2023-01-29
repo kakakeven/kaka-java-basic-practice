@@ -32,6 +32,7 @@ public class FunctionTest {
         List<String> nameList3 = map(students, s -> s.getName());
         // 方法引用的写法
         List<String> nameList4 = map(students, Student::getName);
+        System.out.println(students.stream().map(Student::getName).limit(5).collect(Collectors.toList()));
         System.out.println(nameList1);
         System.out.println(nameList2);
         System.out.println(nameList3);

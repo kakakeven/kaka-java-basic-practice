@@ -1,4 +1,4 @@
-package com.lintrip.java8;
+package com.lintrip.java8.netty;
 
 /**
  * Hello world!

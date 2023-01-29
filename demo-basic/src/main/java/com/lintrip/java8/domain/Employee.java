@@ -5,10 +5,13 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 /**
  * 雇员信息
  */
-public class Employee {
+public class Employee implements  Cloneable{
     private String name;
     private Integer age;
     private double salary;
+
+    public Employee() {
+    }
 
     public Employee(String name, Integer age, double salary) {
         this.name = name;
@@ -38,6 +41,11 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     @Override

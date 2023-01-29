@@ -1,4 +1,4 @@
-package com.lintrip.java8;
+package com.lintrip.java8.netty;
 
 import java.io.IOException;
 import java.net.Socket;

@@ -1,4 +1,4 @@
-package com.lintrip.java8;
+package com.lintrip.java8.netty;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
